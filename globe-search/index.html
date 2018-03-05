@@ -120,7 +120,7 @@
 var container = document.getElementById( 'container' );
 
 // Make the globe
-var globe = new DAT.Globe( container );
+var globe = new DAT.Globe(container, {'imgDir': '/webgl-globe/globe/'});
 
 // We're going to ask a file for the JSON data.
 var xhr = new XMLHttpRequest();
