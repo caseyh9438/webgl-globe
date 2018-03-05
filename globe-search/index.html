@@ -135,7 +135,12 @@ xhr.onreadystatechange = function() {
     if ( xhr.readyState === 4 && xhr.status === 200 ) {
 
         // Parse the JSON
-        var data = JSON.parse( xhr.responseText );
+        //var data = JSON.parse( xhr.responseText );
+        var data = [
+          [4.810, -75.700, 0.020],
+          [11, 5.070, -75.520],
+        ];
+            
         console.log(data);
         // Tell the globe about your JSON data
         for ( var i = 0; i < data.length; i ++ ) {
